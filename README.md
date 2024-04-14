@@ -1,20 +1,23 @@
-## GUIA CONCEPTOS BÁSICOS DE JAVASCRIPT
+## GUÍA CONCEPTOS BÁSICOS DE JAVASCRIPT
+
 
 A continuación estaremos desarrollando el paso a paso para conectar mi repositorio local (el código en mi computador), con mi repositorio remoto (mi biblioteca en GitHub)
 
-1. Crear el repositorio en GitHub
- *buscamos el botón verde con el icono de libro que dice "nuevo"
- Se especifica el nombre del repositorio, descripción y lo ponemos público
 
- 2. Crear nuestro repositorio local
+1. Crear el repositorio en GitHub (remoto)
+   * buscamos el botón verde con el icono de libro que dice "nuevo"
+   * se especifica el nombre del repositorio, descripción y lo ponemos público
 
 
- * abrimos nuestro repositorio desde visual:
- Ctrl+ñ
+2. Crear nuestro repositorio local
 
- vamos a escribir comandos para inicializar nuestro repositorio local y conectarlo con el remoto
+   * abrimos la consola de gist bash desde visual:
+  1. Ctrl+ñ
+  2. ...-> terminal->nuevo terminal
 
- CODIGOS DEBEMOS IR EN ORDEN
+* vamos a escribir comandos para inicializar nuestro repositorio local y conectarlo con el remoto
+
+ *CODIGOS DEBEMOS IR EN ORDEN
 
 1. git init --> Es para inicializar mi repositorio local
 
@@ -33,8 +36,6 @@ A continuación estaremos desarrollando el paso a paso para conectar mi reposito
 ej: https://github.com/170516/actividadClase.git
 
 6.  git push - u origin main --> me envia los cambios a la rama main en mi githup es decir me sube todo a internet. 
-
-
 
 # QUE PONER EN EL README PARA MI PROYECTO FINAL
 pagina con vacantes para el talento joven

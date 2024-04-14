@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceptos básicos de JavaSript</title>
 
-    <script src="/conceptosBásicos.js" defer></script>
+    <!-- archivo de JS clase pasada -->
+    <script src="Scripts/conceptosBásicos.js" defer></script>
+
+    <!--  text/JavaScript-RECOMENDADO USAR -->
+    <script src="Scripts/practicasConceptos.js" defer type="text/JavaScript"></script>
 
 </head>
+
 <body>
-    <h1>Conceptos básicos</h1>
-    <h2>De JavaScript</h2>
+    <header>
+        <h1>Conceptos básicos</h1>
+        <h2>De JavaScript</h2>
+    </header>
+
+    <main>
+        <p>implementar los conceptos del sitio web dinamiscos con JavaScript</p>
+
+        <ol>
+            <li>1. MANEJO DEL DOM</li>
+            <li>2. CONDICIONALES</li>
+            <li>3. CICLOS</li>
+        </ol>
+
+        <!-- sección para el primer ejercicio de DOM y CONDICIONALES -->
+        <section>
+            <h3>Ejercicio de DOM y condicionales</h3>
+            <!-- que es lo que quiero hacer con este ejercicio -->
+            <p>vamos a preguntar al usuario su edad y mostrar en pantalla si es
+            mayor o menor de edad</p>
+
+        <div>
+         <!--input -> entrada-> que es algo que me suministra el usuario ej: numero, nombre, correo, contraseña, etc-->
+         <!-- label -> es una etiqueta para el input -->
+         <label>¿Cuál es tu edad?</label>
+         <input type="number" id="edadInput" placeholder="ingrese aqui su edad">
+         <!-- Para darle funcionalidad a el botón,
+             debo llamar un EVENTO onClik -> darle clik al botón -->
+             <!-- EVENTO ES UNA ACCION DEL USUARIO -->
+       <button onclick="verificarEdad()">Verificar edad</button>
+
+<!-- id es un IDENTIFICADOR ÚNICO ->que hace que podamos llevar un
+elemento de HTML a nuestro JS -->
+       <span id="mensaje"></span>
+       
+        </div>
+<!-- DOM- Modelo de documento como objeto- sirve para modificar, crear, agregar,
+eliminar o cambiar elementos del HTML desde el JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>todos los derechos reservados o creado por Ana Clavijo</p>
+    </footer>
+
 
     <!-- La etiqueta SCRIPT nos sirve para vincular nuestro archivo de JS en nuestro html
     1. inmediatamente antes del cierre del body
@@ -18,6 +67,7 @@
 Cuando el Script lo ponemos en el Head se debe agregar la palabra defer y cuando se relaciona en el body no-->
 
     <!-- <script src="/conceptosBásicos.js"></script> -->
-    
+
 </body>
+
 </html>
