@@ -3,6 +3,7 @@
 //CONSOLE.LOG --> es la forma de enviar mensajes a la consola a mi navegador
 
 console.log("HOLA, PSICOLOGOS Y DESARROLLADORES");
+console.log("mi mensaje");
 
 //conceptos básicos en JavaScript
 
@@ -54,27 +55,29 @@ const celular = {
     modelo: "Galaxy A7",
     ancho: 350,
     alto: 800,
-    //El metodo --> un mensaje que indica (representación de los elementos de la vida real pero en nuestro codigo) la accion
-    enviarMensajes: function () {
+    //El método --> un mensaje que indica (representación de los elementos de la vida real pero en nuestro codigo) la accion
+    enviarMensajes: function (){
         // entre los corchetes al lado de unos parentesis yo establezco la accion a realizar
         console.log("Mensaje enviado");
     },
     //El método -->las acciones --> directamente una operación
-    sumar: function () {
-        console.log(5 + 4);
+    sumar: function(){
+        console.log(5+4);
     }
 }
+// EJEMPLO DE FUNCIONES
+
 //las funciones pueden o no recibir datos de entrada ej: una suma--> los datos que voy a sumar
 // va a ver un procesamiento de datos y luego nos devuelve un resultado
-function buscarObjeto() {
+function buscarObjeto(){
     console.log("le muestra lo que esta buscando")
 }
 
 //EJEMPLOS DE FUNCIONES
 // FUNCIONES --> acciones que ustedes pueden tener en sus sitios web
 
-function filtrarInformacion() {
-    console.log("Memuestra solo la informacion que yo quiera ej:la depresion");
+function filtrarInformacion(){
+    console.log("me muestra solo la informacion que yo quiera ej:la depresion");
 }
 
 //En la carpeta scripts van todos los archivos JS.

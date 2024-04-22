@@ -21,12 +21,13 @@
     </header>
 
     <main>
-        <p>implementar los conceptos del sitio web dinamiscos con JavaScript</p>
+
+        <p>implementar los conceptos del sitio web dinamiscos con JavaScript:</p>
 
         <ol>
-            <li>1. MANEJO DEL DOM</li>
-            <li>2. CONDICIONALES</li>
-            <li>3. CICLOS</li>
+            <li>MANEJO DEL DOM</li>
+            <li>CONDICIONALES</li>
+            <li>CICLOS</li>
         </ol>
 
         <!-- sección para el primer ejercicio de DOM y CONDICIONALES -->
@@ -36,7 +37,7 @@
             <p>vamos a preguntar al usuario su edad y mostrar en pantalla si es
             mayor o menor de edad</p>
 
-        <div>
+        <div class="contenedor">
          <!--input -> entrada-> que es algo que me suministra el usuario ej: numero, nombre, correo, contraseña, etc-->
          <!-- label -> es una etiqueta para el input -->
          <label>¿Cuál es tu edad?</label>
@@ -44,11 +45,13 @@
          <!-- Para darle funcionalidad a el botón,
              debo llamar un EVENTO onClik -> darle clik al botón -->
              <!-- EVENTO ES UNA ACCION DEL USUARIO -->
-       <button onclick="verificarEdad()">Verificar edad</button>
+<button id ="boton" 
+onclick="verificarEdad()">verificar edad</button>
 
 <!-- id es un IDENTIFICADOR ÚNICO ->que hace que podamos llevar un
 elemento de HTML a nuestro JS -->
-       <span id="mensaje"></span>
+<br><br>
+<span id="mensajeEdad">Soy el mensaje que te dira si eres mayor de edad</span>
        
         </div>
 <!-- DOM- Modelo de documento como objeto- sirve para modificar, crear, agregar,
@@ -57,13 +60,12 @@ eliminar o cambiar elementos del HTML desde el JS -->
     </main>
 
     <footer>
-        <p>todos los derechos reservados o creado por Ana Clavijo</p>
+        <p>todos los derechos reservados -- creado por Ana Clavijo</p>
     </footer>
-
 
     <!-- La etiqueta SCRIPT nos sirve para vincular nuestro archivo de JS en nuestro html
     1. inmediatamente antes del cierre del body
-    2. utilizar el script en la etiqueta HEAD 
+    2. utilizar el scriwpt en la etiqueta HEAD 
 Cuando el Script lo ponemos en el Head se debe agregar la palabra defer y cuando se relaciona en el body no-->
 
     <!-- <script src="/conceptosBásicos.js"></script> -->
