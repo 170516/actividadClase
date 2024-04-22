@@ -43,6 +43,5 @@ pagina con vacantes para el talento joven
 2. Descripción general
 3. Autor- mi nombre
 
-# actividadClase
 
 
