@@ -2,17 +2,22 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-
+import conexionMongo from "./src/config/bd.js";
 
 
 //2. CONFIGURAR NUESTRO SERVIDOR
 const app = express();
 const puerto = 9000;
+
 // const puerto = 3000;6000-9000
 
 // 2.1 CONFIGURAR LAS VARIABLES DE ENTORNO
 
 dotenv.config();
+
+// 2.2 CONFIGURAR CONEXION BASE DE DATOS
+
+conexionMongo();
 
 // 3. ESTABLECER LA CONECCION CON NUESTRO FRONT
 const rutaPublica = path.join(process.cwd(),"public");
