@@ -1,133 +1,32 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:#f87b4a;
+    background-color:#FFD9CE ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    p {
+        font: oblique bold 120% cursive;
+      }
+      p {
+        line-height: 200%;
+      }
+margin-top: 100px;
+margin-right: 20PX;
+margin-left: 20PX;
+
+p {
+  padding: 8px;
+  margin: 25px;
+  
+  /* other styling */
+  background-color: #33475b;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
+
+  .container {
+    padding: 90px; /* Aplica un relleno de 8px alrededor de la imagen */
+    margin: 6px; /* Aplica un margen de 25px alrededor de la imagen */
+    margin-top: 60px; /* Sobrescribe el margen superior y lo establece en 50px */
 }
 
-.section-padding {
-    padding: 100px 0;
+
+}
 }
 
-.carousel-item {
-    height: 90vh;
-    min-height: 1%;
-}
-
-.carousel-caption {
-    bottom: 10%;
-    z-index: 2;
-}
-
-.carousel-caption h5 {
-    font-size: 4.5rem;
-    color: rgb(8, 9, 8);
-    text-transform: capitalize;
-    letter-spacing: 8px;
-    margin-bottom: 25px;
-}
-
-.carousel-caption h4 {
-    font-size: 4.5rem;
-    color: rgb(238, 187, 187);
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-}
-
-.carousel-caption p {
-    width: 80%;
-    margin: 2px;
-    font-size: 1rem;
-    line-height: 1.9;
-}
-
-.carousel-inner::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 124, 1, 0.327);
-    z-index: -1;
-}
-
-.navbar-nav a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.navbar-dark .navbar-brand {
-    color: rgb(255, 77, 0);
-    font-size: 1.5625rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover {
-    color: #ff0000;
-}
-
-.w-100 {
-    height: 100vh;
-}
-
-.navbar-toggler {
-    padding: 1px 5px;
-    font-size: 18px;
-    line-height: 0.3;
-}
-
-.services .card-body i {
-    font-size: 50px;
-}
-
-.team .card-body i {
-    font-size: 20px;
-}
-
-@media (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .carousel-item {
-        height: 70vh;
-    }
-
-    .w-100 {
-        height: 70vh;
-    }
-
-    .carousel-caption {
-        bottom: 125px;
-    }
-
-    .carousel-caption h5 {
-        font-size: 17px;
-    }
-
-    .carousel-caption a {
-        padding: 10px 15px;
-        font-size: 15px;
-    }
-
-    .carousel-caption p {
-        width: 100%;
-        line-height: 1.5;
-        font-size: 12px;
-    }
-
-    .about-text {
-        padding-top: 50px;
-    }
-
-    .card {
-        margin-bottom: 30px;
-    }
-
-    .section-padding {
-        padding: 50px 0;
-    }
-}

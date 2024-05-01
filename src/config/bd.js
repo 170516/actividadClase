@@ -8,7 +8,7 @@ await mongoose.connect(process.env.BD_URL,{})
 
 // CONTROL DE ERRORES CON TRY-CATCH
 
-try{console-log("conexion exitosa");}
+try{console.log("conexion exitosa");}
 catch(error){console.log("error de conexion:",error.message);}
 }
 

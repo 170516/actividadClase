@@ -7,5 +7,31 @@
 </head>
 <body>
     <h1>Soy la pagina de ingreso</h1>
+     <!-- HACEMOS LA PAGINA SEGUN EL DISEÑO DE QUE TENGAMOS EN NUESTRO SITIO -->
+    <!-- DEBE TENER:
+1. Formulario de rigistro
+
+Preguntar al usuario su correo electronico
+Preguntar al usuario su contraseña
+Boton que diga ingresar -->
+
+    
+<form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Teléfono:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+     
+<form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Cargo aplicar:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="mensaje">Comentarios:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
 </body>
 </html>

@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   <h1>Soy la página registro</h1> 
 
-   <!-- HACEMOS LA PAGINA SEGUN EL DISEÑO DE QUE TENGAMOS EN NUESTRO SITIO -->
-   <!-- DEBE TENER:
+<body>
+    <!-- HACEMOS LA PAGINA SEGUN EL DISEÑO DE QUE TENGAMOS EN NUESTRO SITIO -->
+    <!-- DEBE TENER:
 1. Formulario de rigistro
 Preguntar al usuario su nombre completo
 Preguntar al usuario su correo electronico
 Preguntar al usuario su contraseña
-Boton que diga regiostrar -->
+Boton que diga registrar -->
+
+    <h1>Registro semillero talento joven</h1>
+    <p>En el Banco de Bogotá, celebramos la energía y la innovación de la juventud. Únete a nosotros y sé parte de
+        un equipo que valora tus ideas frescas y tu pasión por el cambio #SoyBanboger.​</p>
+
+        <h2>Compartenos tus datos para ponernos en contacto en el transcurso de 2 a 3 dias hábiles</h2>
+
+
+
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Teléfono:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+         
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Cargo aplicar:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="mensaje">Comentarios:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
-</html>
