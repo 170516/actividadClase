@@ -2,4 +2,4 @@
 GET http://localhost:9000/api/obtenerUsuario
 
 # Obtener todos los usuarios
-GET http://localhost:9000/api/obtenerUsuario
+POST http://localhost:9000/api/crearUsuario

@@ -10,11 +10,11 @@ const usuarioRouter = express.Router();
 
 // Definimos nuestras rutas especificas
 
-usuarioRouter.get("/obtenerUsuario", getUsuario);
+usuarioRouter.get("/obtenerUsuario",getUsuario);
 
 // Ruta para crear usuarios
 
-usuarioRouter.post("/crearUsuario", postUsuario);
+usuarioRouter.post("/crearUsuario",postUsuario);
 
 // Ruta para modificar usuarios por su id --> identificador unico
 usuarioRouter.put("/modificarUsuario/:_id",putUsuario);
