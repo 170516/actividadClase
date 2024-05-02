@@ -20,11 +20,7 @@ p {
   color: white;
   font-family: Arial;
 
-  .container {
-    padding: 90px; /* Aplica un relleno de 8px alrededor de la imagen */
-    margin: 6px; /* Aplica un margen de 25px alrededor de la imagen */
-    margin-top: 60px; /* Sobrescribe el margen superior y lo establece en 50px */
-}
+  
 
 
 }

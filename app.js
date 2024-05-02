@@ -3,6 +3,7 @@ import path from "path";
 import dotenv from "dotenv";
 import { spawn } from "child_process";
 import conexionMongo from "./src/config/bd.js";
+import usuarioRouter from "./src/routes/usuario.routes.js";
 
 // Configurar el servidor
 const app = express();
@@ -18,6 +19,7 @@ conexionMongo();
 const rutaPublica = path.join(process.cwd(), "public");
 app.use(express.static(rutaPublica));
 app.use(express.json());
+app.use("/api", usuarioRouter);
 
 // Especificar que vamos a acceder a nuestro index.html
 app.get("/", (req, res) => {
@@ -27,14 +29,7 @@ app.get("/", (req, res) => {
 // Inicializar el servidor
 const servidor = app.listen(puerto, () => {
   console.log(`El servidor está escuchando en http://localhost:${puerto}`);
-  
-  // Abrir automáticamente index.html en la consola
-  const comando = process.platform === "win32" ? "start" : "xdg-open";
-  spawn(comando, ["http://localhost :" + puerto], { shell: true });
-});
+}
+)
 
-// Manejo de errores
-servidor.on("error", (error) => {
-  console.error("Error al iniciar el servidor:", error);
-});
 
