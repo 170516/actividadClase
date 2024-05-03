@@ -24,7 +24,7 @@ Boton que diga registrar -->
 
 
 
-    <form action="procesar_formulario.php" method="POST">
+    <form id="formulario" action="procesar_formulario.php" method="POST">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -46,4 +46,7 @@ Boton que diga registrar -->
 
         <input type="submit" value="Enviar">
     </form>
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function (event){event.preventDefault();window.location.href="ingreso.html"})
+        </script>
 </body>

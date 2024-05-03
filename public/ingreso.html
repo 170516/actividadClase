@@ -16,7 +16,7 @@ Preguntar al usuario su contraseña
 Boton que diga ingresar -->
 
     
-<form action="procesar_formulario.php" method="POST">
+<form id="miFormulario" action="procesar_formulario.php" method="POST">
     <label for="nombre">Teléfono:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -24,14 +24,17 @@ Boton que diga ingresar -->
     <input type="email" id="email" name="email" required><br><br>
 
      
-<form action="procesar_formulario.php" method="POST">
+
     <label for="nombre">Cargo aplicar:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
     <label for="mensaje">Comentarios:</label><br>
     <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
 
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar" href="./Index.html">
 </form>
+<script>
+document.getElementById("miFormulario").addEventListener("submit", function (event){event.preventDefault();window.location.href="Index.html"})
+</script>
 </body>
 </html>
